@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Header from "./common/components/header";
+import VaultWrapper from "./common/wrapper/vaultWrapper";
+import Alert from "./common/components/alert";
+import Sidebar from "./common/components/sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Header/>
+      <Alert/>
+      <Sidebar/>
+      <VaultWrapper/>
     </div>
   );
 }
